@@ -1,0 +1,4 @@
+[include]
+  path = .gitconfig_common
+[user]
+  email = cananito@gmail.com
