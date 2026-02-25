@@ -1,0 +1,12 @@
+SCRIPTS_DIR="$PWD"/"$(dirname $0)"
+sh "$SCRIPTS_DIR"/setup-dotfiles-repo.sh
+sh "$SCRIPTS_DIR"/install-stow.sh
+sh "$SCRIPTS_DIR"/install-dotfiles.sh
+sh "$SCRIPTS_DIR"/install-vim.sh
+sh "$SCRIPTS_DIR"/install-libevent.sh
+sh "$SCRIPTS_DIR"/install-pkg-config.sh
+sh "$SCRIPTS_DIR"/install-tmux.sh
+sh "$SCRIPTS_DIR"/install-pcre2.sh
+sh "$SCRIPTS_DIR"/install-openssl.sh
+sh "$SCRIPTS_DIR"/install-nginx.sh
+sh "$SCRIPTS_DIR"/setup-android-dev.sh
