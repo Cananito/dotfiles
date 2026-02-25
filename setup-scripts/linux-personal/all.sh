@@ -1,5 +1,4 @@
 SCRIPTS_DIR="$PWD"/"$(dirname $0)"
-sh "$SCRIPTS_DIR"/setup-dotfiles-repo.sh
 sh "$SCRIPTS_DIR"/install-stow.sh
 sh "$SCRIPTS_DIR"/install-dotfiles.sh
 sh "$SCRIPTS_DIR"/install-vim.sh
