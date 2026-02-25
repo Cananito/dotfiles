@@ -1,0 +1,80 @@
+" General settings.
+set nocompatible
+filetype plugin on
+filetype indent off
+set autoindent
+set nosmartindent
+set nosmarttab
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set backspace=indent,eol,start
+syntax on
+au FileType * set formatoptions-=t formatoptions-=c formatoptions-=r formatoptions-=o formatoptions-=q formatoptions-=l " Turns off all default format options.
+let mapleader=','
+set noswapfile
+set hidden
+set completeopt-=preview " Disables the preview window. YCM and other completers use it to display doc snippets.
+set ruler
+set cursorline " Not compatible with iTerm's 'Cursor guide' setting.
+highlight CursorLine cterm=none ctermbg=15 ctermfg=none
+set hlsearch
+set incsearch
+set number relativenumber
+
+" vimdiff settings.
+" Colors chart: https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
+set diffopt=internal,filler,closeoff,vertical
+highlight DiffAdd cterm=none ctermbg=112 ctermfg=none
+highlight DiffDelete cterm=none ctermbg=160 ctermfg=none
+highlight DiffChange cterm=none ctermbg=220 ctermfg=none
+
+" colorcolumn settings.
+highlight ColorColumn cterm=none ctermbg=007 ctermfg=none
+augroup color_column
+  autocmd!
+  autocmd FileType c,cpp,javascript,markdown,proto,python,text,textproto,typescript setlocal colorcolumn=80
+  autocmd FileType java,kotlin,objc,objcpp,swift setlocal colorcolumn=100
+augroup END
+
+" netrw settings.
+let g:netrw_banner = 0 " Hide netwr's banner. Toggle with `I`.
+let g:netrw_sort_sequence = '[\/]$,*' " Directories, everything else.
+let g:netrw_sort_direction = 'normal'
+let g:netrw_sort_by = 'name'
+let g:netrw_list_hide = '^\./$,^\.\./$' " Hide `..` and `.`.
+let g:netrw_dirhistmax = 0 " Disables history file.
+
+" Man settings.
+set keywordprg=:Man
+let g:ft_man_no_sect_fallback = 1
+
+" txt settings.
+augroup text_and_markdown_linebreak
+  autocmd!
+  autocmd FileType markdown,text setlocal linebreak
+augroup END
+
+" gitconfig settings.
+augroup gitconfig
+  autocmd!
+  " All other associations come from $VIMRUNTIME/filetype.vim.
+  au BufNewFile,BufRead .gitconfig_common setf gitconfig
+augroup END
+
+" swift settings.
+augroup swift
+  autocmd!
+  autocmd FileType swift setlocal nosmartindent " Comes from $VIMRUNTIME/ftplugin/swift.vim
+  autocmd FileType swift setlocal shiftwidth=2 " Comes from $VIMRUNTIME/ftplugin/swift.vim
+  autocmd FileType swift setlocal softtabstop=0 " Comes from $VIMRUNTIME/ftplugin/swift.vim
+augroup END
+
+" Command to enter diff mode for current file under Git.
+function! s:gitdiffsplit()
+  let l:temp_file = tempname()
+  let l:command = 'git show HEAD:./' . expand('%:f') . ' > ' . l:temp_file
+  let l:result = system(l:command)
+  execute 'diffsplit' l:temp_file
+endfunction
+command! GitDiffSplit :call <SID>gitdiffsplit()

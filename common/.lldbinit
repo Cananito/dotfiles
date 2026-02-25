@@ -1,0 +1,6 @@
+command alias pwindow expression -O -- [[[UIApplication sharedApplication] keyWindow] recursiveDescription]
+command alias prootvc expression -O -- [[[[UIApplication sharedApplication] keyWindow] rootViewController] _printHierarchy]
+command alias phomedir expression -O -- NSHomeDirectory()
+command alias persist_breakpoints breakpoint write -f ~/.breakpoints
+command alias load_breakpoints breakpoint read -f ~/.breakpoints
+load_breakpoints

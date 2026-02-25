@@ -1,0 +1,25 @@
+[core]
+  editor = "vim"
+  excludesfile = ~/.gitignore_global
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[alias]
+  switch = checkout
+  discard = checkout --
+  create = checkout -b
+  delete = branch -D
+  rename = branch -m
+  branches = branch
+  stashes = stash list
+  stashdiff = stash show -p
+  diffexternal = difftool -t opendiff -y
+  stage = add
+  unstage = reset --
+  deletelastcommit = reset --hard HEAD~1
+  revertlastcommit = reset --soft HEAD~1
+  currentbranchname = rev-parse --abbrev-ref HEAD
+  applyp4patch = git apply -p7
+  applyhgpatch = git apply
+  applygitpatch = git apply
