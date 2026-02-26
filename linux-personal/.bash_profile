@@ -1,5 +1,7 @@
 source "$HOME"/.bash_profile_common
 
+# TODO: Git prompt and completion!
+
 export PS1=" \[\e[1m\]\W\[\e[0m\]\[\e[31m\]\$(__git_ps1)\$(__citc_ps1)\[\e[0m\] 🔴 "
 
 # Android dev set up.

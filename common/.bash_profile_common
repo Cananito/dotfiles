@@ -5,5 +5,3 @@ export EDITOR="$VISUAL"
 export DIFF="/usr/bin/diff"
 
 source "$HOME"/.tmux.completion.bash
-source /usr/local/git/current/share/git-core/git-completion.bash
-source /usr/local/git/current/share/git-core/git-prompt.sh
