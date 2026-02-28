@@ -3,15 +3,14 @@ CURR_LOCATION="$PWD"
 mkdir -p "$HOME"/android/cmdline-tools/latest
 
 # https://developer.android.com/studio#command-line-tools-only.
-curl https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip -OL
-# curl https://dl.google.com/android/repository/commandlinetools-linux-14742923_latest.zip -OL
+curl https://dl.google.com/android/repository/commandlinetools-linux-14742923_latest.zip -OL
+# curl https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip -OL
 
-unzip commandlinetools-mac-14742923_latest.zip
-# unzip commandlinetools-linux-14742923_latest.zip
+unzip commandlinetools-linux-14742923_latest.zip
 
 mv cmdline-tools/* "$HOME"/android/cmdline-tools/latest/
 
-rm commandlinetools-mac-14742923_latest.zip
+rm commandlinetools-linux-14742923_latest.zip
 rm -rf cmdline-tools/
 
 cd "$HOME"/android/cmdline-tools/latest/bin
