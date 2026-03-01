@@ -10,3 +10,8 @@ export KEYSTORE_PASSWORD="123123"
 
 # Expands $PATH to find the Android dev binaries.
 PATH=""$ANDROID_HOME"/tools":""$ANDROID_HOME"/tools/bin":""$ANDROID_HOME"/platform-tools":"$PATH"
+
+# Start Xorg.
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  exec startx
+fi
