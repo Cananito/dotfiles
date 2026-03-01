@@ -4,7 +4,7 @@ cd "$HOME"/dotfiles/tars
 if [ ! -f "$HOME"/dotfiles/tars/vim-9.2.tar.bz2 ]; then
   curl https://www.vim.org/downloads/vim-9.2.tar.bz2 -OL
 fi
-tar -xzf vim-9.2.tar.bz2
+tar -xjf vim-9.2.tar.bz2
 cd "$HOME"/dotfiles/tars/vim92
 ./configure
 make
