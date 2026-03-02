@@ -1,4 +1,6 @@
 [include]
   path = .gitconfig_common
+[credential]
+  helper = store --file ~/.git-creds
 [user]
   email = cananito@gmail.com
