@@ -6,5 +6,5 @@ fi
 tar -xzf dwm-6.8.tar.gz
 cd "$HOME"/dotfiles/tars/dwm-6.8
 sudo make install
-rm -rf "$HOME"/dotfiles/tars/dwm-6.8.tar.gz
+rm -rf "$HOME"/dotfiles/tars/dwm-6.8
 cd "$CURR_LOCATION"

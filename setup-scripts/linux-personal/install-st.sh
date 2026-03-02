@@ -6,5 +6,5 @@ fi
 tar -xzf st-0.9.3.tar.gz
 cd "$HOME"/dotfiles/tars/st-0.9.3
 sudo make install
-rm -rf "$HOME"/dotfiles/tars/st-0.9.3.tar.gz
+rm -rf "$HOME"/dotfiles/tars/st-0.9.3
 cd "$CURR_LOCATION"
