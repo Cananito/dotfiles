@@ -4,9 +4,6 @@ sh "$SCRIPTS_DIR"/install-stow.sh
 sh "$SCRIPTS_DIR"/install-vim.sh
 sh "$SCRIPTS_DIR"/install-st.sh
 sh "$SCRIPTS_DIR"/install-dwm.sh
-sh "$SCRIPTS_DIR"/install-libevent.sh
-sh "$SCRIPTS_DIR"/install-pkg-config.sh
-sh "$SCRIPTS_DIR"/install-tmux.sh
 sh "$SCRIPTS_DIR"/install-chrome.sh
 sh "$SCRIPTS_DIR"/setup-android-dev.sh
 sh "$SCRIPTS_DIR"/install-dotfiles.sh

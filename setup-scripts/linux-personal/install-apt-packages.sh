@@ -9,6 +9,7 @@ sudo apt install \
   libxft-dev \
   libxinerama-dev \
   nginx \
+  tmux \
   universal-ctags \
   vlc \
   xinit \
