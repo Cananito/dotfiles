@@ -1,9 +1,10 @@
 sudo apt install \
   curl \
   fastfetch \
+  gcc \
   gimp \
   htop \
-  make \
+  libncurses-dev \
   nginx \
   universal-ctags \
   vlc \
