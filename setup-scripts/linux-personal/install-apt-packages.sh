@@ -1,4 +1,5 @@
 sudo apt install \
+  brightnessctl \
   curl \
   fastfetch \
   gcc \
@@ -9,6 +10,9 @@ sudo apt install \
   libxft-dev \
   libxinerama-dev \
   nginx \
+  pipewire \
+  pipewire-audio \
+  sxhkd \
   tmux \
   universal-ctags \
   vlc \
