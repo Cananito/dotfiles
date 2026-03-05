@@ -1,4 +1,5 @@
 source "$HOME"/.bash_profile_common
+source "$HOME"/.dwm-status-bar.sh
 
 # TODO: Git prompt and completion!
 
