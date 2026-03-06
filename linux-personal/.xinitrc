@@ -1,5 +1,20 @@
+# Set screen resolution.
 xrandr --output eDP --mode 1280x800
+
+# Set keyboard key repeat speed.
 xset r rate 200 30
+
+# Map caps lock to esc.
 setxkbmap -option caps:escape
-sh ~/.dwm-status-bar.sh &
+
+# Start sxhkd.
+sxhkd -c "$HOME"/.sxhkdconfig &
+
+# systemctl --user restart wireplumber pipewire pipewire-pulse
+
+# Start dwm.
 exec dwm
+
+# Start dwm status bar updates.
+source "$HOME"/.dwm-status-bar.sh
+run_dwm_status_bar_updater &
