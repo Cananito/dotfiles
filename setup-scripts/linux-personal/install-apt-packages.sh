@@ -15,7 +15,6 @@ sudo apt install \
   sxhkd \
   tmux \
   universal-ctags \
-  upower \
   vlc \
   xinit \
   xserver-xorg-core \

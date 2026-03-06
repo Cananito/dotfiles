@@ -10,11 +10,9 @@ setxkbmap -option caps:escape
 # Start sxhkd.
 sxhkd -c "$HOME"/.sxhkdconfig &
 
-# systemctl --user restart wireplumber pipewire pipewire-pulse
-
 # Start dwm.
 exec dwm
 
 # Start dwm status bar updates.
-source "$HOME"/.dwm-status-bar.sh
-run_dwm_status_bar_updater &
+# source "$HOME"/.dwm-status-bar.sh
+# run_dwm_status_bar_updater &
