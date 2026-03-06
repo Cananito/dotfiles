@@ -1,8 +1,6 @@
 source "$HOME"/.bash_profile_common
 source "$HOME"/.dwm-status-bar.sh
 
-# TODO: Git prompt and completion!
-
 export PS1=" \[\e[1m\]\W\[\e[0m\]\[\e[31m\]\$(__git_ps1)\[\e[0m\] 🔴 "
 
 # Android dev set up.
