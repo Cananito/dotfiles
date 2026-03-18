@@ -3,6 +3,7 @@ sh "$SCRIPTS_DIR"/install-apt-packages.sh
 sh "$SCRIPTS_DIR"/install-stow.sh
 sh "$SCRIPTS_DIR"/install-vim.sh
 sh "$SCRIPTS_DIR"/install-st.sh
+sh "$SCRIPTS_DIR"/install-dmenu.sh
 sh "$SCRIPTS_DIR"/install-dwm.sh
 sh "$SCRIPTS_DIR"/install-chrome.sh
 sh "$SCRIPTS_DIR"/setup-android-dev.sh
