@@ -1,5 +1,4 @@
 source "$HOME"/.bash_profile_common
-source "$HOME"/.dwm-status-bar.sh
 
 export PS1=" \[\e[1m\]\W\[\e[0m\]\[\e[31m\]\$(__git_ps1)\[\e[0m\] 🔴 "
 

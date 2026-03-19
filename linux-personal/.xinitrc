@@ -14,5 +14,4 @@ sxhkd -c "$HOME"/.sxhkdconfig &
 exec dwm
 
 # Start dwm status bar updates.
-# source "$HOME"/.dwm-status-bar.sh
-# run_dwm_status_bar_updater &
+# TODO
