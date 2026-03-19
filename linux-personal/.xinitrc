@@ -10,8 +10,8 @@ setxkbmap -option caps:escape
 # Start sxhkd.
 sxhkd -c "$HOME"/.sxhkdconfig &
 
+# Start dwm status bar updates.
+exec slstatus &
+
 # Start dwm.
 exec dwm
-
-# Start dwm status bar updates.
-# TODO
