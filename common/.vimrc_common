@@ -17,7 +17,6 @@ set hidden
 set completeopt-=preview " Disables the preview window. YCM and other completers use it to display doc snippets.
 set ruler
 set cursorline " Not compatible with iTerm's 'Cursor guide' setting.
-highlight CursorLine cterm=none ctermbg=15 ctermfg=none
 set hlsearch
 set incsearch
 set number relativenumber
