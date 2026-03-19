@@ -1,8 +1,8 @@
 XF86MonBrightnessDown
-    brightnessctl set 5%- ; update_dwm_status_bar
+    brightnessctl set 5%-
 
 XF86MonBrightnessUp
-    brightnessctl set +5% ; update_dwm_status_bar
+    brightnessctl set +5%
 
 XF86AudioRaiseVolume
     wpctl set-mute @DEFAULT_AUDIO_SINK@ 0 ; \
