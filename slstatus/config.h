@@ -59,6 +59,7 @@ static const char unknown_str[] = "n/a";
  * up                  interface is running            interface name (eth0)
  * uptime              system uptime                   NULL
  * username            username of current user        NULL
+ * vol_alsa_perc       ALSA Master volume in percent   NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
@@ -68,7 +69,8 @@ static const struct arg args[] = {
 	/* function, format, argument */
   { wifi_essid, " WiFi: %s ", "wlp2s0"},
   { wifi_perc, "%s%% |", "wlp2s0"},
-  // { vol_perc, " Vol: %s%% |", NULL},
+  // TODO: screen brightness
+  { vol_alsa_perc, " Vol: %s |", NULL },
   { battery_perc, " Bat: %s%% |", "BAT0" },
   { datetime, " %s ", "%a %b %d  %I:%M %p" },
 };
