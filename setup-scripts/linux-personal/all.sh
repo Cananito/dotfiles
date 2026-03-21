@@ -9,5 +9,6 @@ sh "$SCRIPTS_DIR"/install-dwm.sh
 sh "$SCRIPTS_DIR"/install-chrome.sh
 sh "$SCRIPTS_DIR"/setup-android-dev.sh
 sh "$SCRIPTS_DIR"/install-dotfiles.sh
+fc-cache -v -f
 sh "$SCRIPTS_DIR"/setup-dev-repos.sh
 sh "$SCRIPTS_DIR"/install-barbellcalc.sh

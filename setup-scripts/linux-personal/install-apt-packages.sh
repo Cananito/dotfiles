@@ -2,6 +2,7 @@ sudo apt install \
   brightnessctl \
   curl \
   fastfetch \
+  fonts-noto-color-emoji \
   gcc \
   gimp \
   htop \
