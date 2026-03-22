@@ -17,8 +17,10 @@ sudo apt install \
   sxhkd \
   tmux \
   universal-ctags \
+  unzip \
   vlc \
   xinit \
   xserver-xorg-core \
   xserver-xorg-video-amdgpu \
-  zathura
+  zathura \
+  zip
