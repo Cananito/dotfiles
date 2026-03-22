@@ -11,6 +11,7 @@ sudo apt install \
   libx11-dev \
   libxft-dev \
   libxinerama-dev \
+  libxt-dev \
   nginx \
   pipewire \
   pipewire-audio \

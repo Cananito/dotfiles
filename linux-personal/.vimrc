@@ -3,6 +3,8 @@ runtime! ftplugin/man.vim
 
 source $HOME/.vimrc_common
 
+set clipboard=unnamedplus
+
 " Highlight trailing whitespace.
 "   \v            verymagic
 "   (^|\S@<=)\s+  match whitespace extending back to the start of line or

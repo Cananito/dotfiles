@@ -6,7 +6,7 @@ if [ ! -f "$HOME"/dotfiles/tars/vim-9.2.tar.bz2 ]; then
 fi
 tar -xjf vim-9.2.tar.bz2
 cd "$HOME"/dotfiles/tars/vim92
-./configure
+./configure --with-x --enable-gui=no
 make
 sudo make install
 make clean distclean
