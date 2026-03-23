@@ -1,3 +1,6 @@
+" man page plugin.
+runtime! ftplugin/man.vim
+
 " General settings.
 set nocompatible
 filetype plugin on
@@ -15,6 +18,7 @@ let mapleader=','
 set noswapfile
 set hidden
 set completeopt-=preview " Disables the preview window. YCM and other completers use it to display doc snippets.
+set clipboard=unnamed,unnamedplus
 set ruler
 set cursorline
 set hlsearch

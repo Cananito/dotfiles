@@ -1,9 +1,4 @@
-" man page plugin.
-runtime! ftplugin/man.vim
-
 source $HOME/.vimrc_common
-
-set clipboard=unnamedplus
 
 " Highlight trailing whitespace.
 "   \v            verymagic
