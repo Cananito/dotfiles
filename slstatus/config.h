@@ -62,6 +62,7 @@ static const char unknown_str[] = "n/a";
  * vol_alsa_perc       ALSA Master volume in percent   NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
+ * screen_bright_perc  Screen brightness               NULL
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
@@ -69,7 +70,7 @@ static const struct arg args[] = {
 	/* function, format, argument */
   { wifi_essid, " WiFi: %s ", "wlp2s0"},
   { wifi_perc, "%s%% |", "wlp2s0"},
-  // TODO: screen brightness
+  { screen_bright_perc, " Bright: %s%% |", NULL },
   { vol_alsa_perc, " Vol: %s |", NULL },
   { battery_perc, " Bat: %s%% |", "BAT0" },
   { datetime, " %s ", "%a %b %d  %I:%M %p" },

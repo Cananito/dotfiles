@@ -81,6 +81,9 @@ const char *username(const char *unused);
 const char *vol_alsa_perc(const char *unused);
 const char *vol_perc(const char *card);
 
+/* screen brightness */
+const char *screen_bright_perc(const char *unused);
+
 /* wifi */
 const char *wifi_essid(const char *interface);
 const char *wifi_perc(const char *interface);

@@ -22,11 +22,13 @@ COM =\
 	components/num_files\
 	components/ram\
 	components/run_command\
+	components/screen_brightness\
 	components/swap\
 	components/temperature\
 	components/uptime\
 	components/user\
 	components/volume\
+	components/volume_alsa\
 	components/wifi
 
 all: slstatus
