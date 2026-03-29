@@ -15,6 +15,7 @@ sudo apt install \
   nginx \
   pipewire \
   pipewire-audio \
+  scrot \
   sxhkd \
   tmux \
   universal-ctags \

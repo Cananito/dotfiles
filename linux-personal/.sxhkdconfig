@@ -14,3 +14,9 @@ XF86AudioLowerVolume
 
 XF86AudioMute
     amixer sset Master toggle
+
+F9
+    scrot -F ~/downloads/"$(date)".jpg
+
+shift + F9
+    scrot -u -F ~/downloads/"$(date)".jpg
