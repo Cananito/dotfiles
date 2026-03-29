@@ -17,6 +17,7 @@ sudo apt install \
   pipewire-audio \
   scrot \
   sxhkd \
+  sxiv \
   tmux \
   universal-ctags \
   unzip \
