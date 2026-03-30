@@ -15,8 +15,9 @@ XF86AudioLowerVolume
 XF86AudioMute
     amixer sset Master toggle
 
-F9
+# Print = PrtSc F9 on ThinkPad E14
+Print
     scrot -F ~/downloads/"$(date)".jpg
 
-shift + F9
+shift + Print
     scrot -u -F ~/downloads/"$(date)".jpg
