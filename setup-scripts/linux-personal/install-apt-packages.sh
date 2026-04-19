@@ -2,6 +2,7 @@
 sudo apt install \
   brightnessctl \
   curl \
+  evince \
   fastfetch \
   fonts-noto-color-emoji \
   gcc \
