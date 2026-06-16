@@ -7,13 +7,21 @@
 --kinddef-Swift=p,protocol,protocols
 --kinddef-Swift=e,enum,enums
 --kinddef-Swift=t,typealias,typealiases
-# Including access modifiers so in the future we can filter between public and non-public symbols based on the -F extras flag.
-# These regexes don't work when the declaration is multi line.
-# Disabling let and vars since filtering out local vars/lets complicates things.
-# --regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*(var|let)\s([a-zA-z0-9_]+).*$/\3/v/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*class\s([A-Z][a-zA-Z0-9_]*).*$/\2/c/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*enum\s([A-Z][a-zA-Z0-9_]*).*$/\2/e/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*func\s([a-zA-Z0-9_]+).*$/\2/f/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*protocol\s([A-Z][a-zA-Z0-9_]*).*$/\2/p/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*struct\s([A-Z][a-zA-Z0-9_]*).*$/\2/s/
---regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*typealias\s([A-Z][a-zA-Z0-9_]*).*$/\2/t/
+# Pass in `--extras-Swift=+{nonpublic}` to add entries for non-public symbols.
+--_extradef-Swift=nonpublic,Include non-public symbols
+# Non of these regexes don't work when the declaration is multi line.
+# Bug: protocol members usually omit access modifier and inherit it from the protocol declaration.
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*(var|let)\s([a-zA-z0-9_]+).*$/\3/v/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*(var|let)\s([a-zA-z0-9_]+).*$/\3/v/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*class\s([A-Z][a-zA-Z0-9_]*).*$/\2/c/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*class\s([A-Z][a-zA-Z0-9_]*).*$/\2/c/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*enum\s([A-Z][a-zA-Z0-9_]*).*$/\2/e/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*enum\s([A-Z][a-zA-Z0-9_]*).*$/\2/e/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*func\s([a-zA-Z0-9_]+).*$/\2/f/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*func\s([a-zA-Z0-9_]+).*$/\2/f/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*protocol\s([A-Z][a-zA-Z0-9_]*).*$/\2/p/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*protocol\s([A-Z][a-zA-Z0-9_]*).*$/\2/p/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*struct\s([A-Z][a-zA-Z0-9_]*).*$/\2/s/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*struct\s([A-Z][a-zA-Z0-9_]*).*$/\2/s/
+--regex-Swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*typealias\s([A-Z][a-zA-Z0-9_]*).*$/\2/t/{_extra=nonpublic}
+--regex-Swift=/^[\ \t]*(public)[a-zA-Z\ \t]*typealias\s([A-Z][a-zA-Z0-9_]*).*$/\2/t/
