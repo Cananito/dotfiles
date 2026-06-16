@@ -1,0 +1,18 @@
+--langdef=Swift
+--langmap=Swift:.swift
+--kinddef-swift=v,variable,variables
+--kinddef-swift=f,function,functions
+--kinddef-swift=s,struct,structs
+--kinddef-swift=c,class,classes
+--kinddef-swift=p,protocol,protocols
+--kinddef-swift=e,enum,enums
+--kinddef-swift=t,typealias,typealiases
+# Including access modifiers so in the future we can filter between public and non-public symbols based on the -F extras flag.
+# Disabling let and vars since filtering out local vars/lets complicates things.
+# --regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*(var|let)\s([a-zA-z0-9_]+).*$/\3/v/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*class\s([A-Z][a-zA-Z0-9_]*).*$/\2/c/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*enum\s([A-Z][a-zA-Z0-9_]*).*$/\2/e/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*func\s([a-zA-Z0-9_]+).*$/\2/f/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*protocol\s([A-Z][a-zA-Z0-9_]*).*$/\2/p/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*struct\s([A-Z][a-zA-Z0-9_]*).*$/\2/s/
+--regex-swift=/^[\ \t]*(public|private|internal|fileprivate)?[a-zA-Z\ \t]*typealias\s([A-Z][a-zA-Z0-9_]*).*$/\2/t/
