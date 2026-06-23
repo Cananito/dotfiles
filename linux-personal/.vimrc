@@ -1,5 +1,7 @@
 source $HOME/.vimrc_common
 
+set clipboard=unnamed,unnamedplus
+
 " Highlight trailing whitespace.
 "   \v            verymagic
 "   (^|\S@<=)\s+  match whitespace extending back to the start of line or
