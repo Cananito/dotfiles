@@ -7,6 +7,7 @@ source $HOME/.vimrc_common
 packadd osc52
 set clipmethod+=osc52
 let g:osc52_force_avail = v:true
+let g:osc52_disable_paste = v:true
 
 " Highlight trailing whitespace.
 "   \v            verymagic
