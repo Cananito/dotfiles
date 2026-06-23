@@ -6,10 +6,11 @@ cd "$HOME"/dotfiles/tars
 # fi
 # tar -xzf vim-9.2.tar.bz2
 # cd "$HOME"/dotfiles/tars/vim92
-if [ ! -f "$HOME"/dotfiles/tars/vim-5c1b989b4aabf1549910752dcfb44030e64edfcc.tar.gz ]; then
+if [ ! -f "$HOME"/dotfiles/tars/vim.tar.gz ]; then
   curl https://github.com/vim/vim/archive/5c1b989b4aabf1549910752dcfb44030e64edfcc.tar.gz -OL
+  mv 5c1b989b4aabf1549910752dcfb44030e64edfcc.tar.gz vim.tar.gz
 fi
-tar -xzf vim-5c1b989b4aabf1549910752dcfb44030e64edfcc.tar.gz
+tar -xzf vim.tar.gz
 cd "$HOME"/dotfiles/tars/vim-5c1b989b4aabf1549910752dcfb44030e64edfcc
 ./configure
 make
