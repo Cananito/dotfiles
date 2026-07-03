@@ -12,3 +12,4 @@ sh "$SCRIPTS_DIR"/install-dotfiles.sh
 fc-cache -v -f
 sh "$SCRIPTS_DIR"/setup-dev-repos.sh
 sh "$SCRIPTS_DIR"/install-barbellcalc.sh
+sh "$SCRIPTS_DIR"/install-ctags.sh
