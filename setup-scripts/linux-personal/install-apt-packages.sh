@@ -7,6 +7,7 @@ sudo apt install \
   fonts-noto-color-emoji \
   gcc \
   gimp \
+  gnome-calculator \
   htop \
   libncurses-dev \
   libx11-dev \
