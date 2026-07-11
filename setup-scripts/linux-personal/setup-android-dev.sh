@@ -16,7 +16,7 @@ rm -rf cmdline-tools/
 cd "$HOME"/android/cmdline-tools/latest/bin
 
 # Run `./sdkmanager --list` to get a list of all packages.
-./sdkmanager "platforms;android-34" "system-images;android-34;google_apis;arm64-v8a" "platform-tools" "build-tools;36.1.0" "ndk;29.0.14206865"
+./sdkmanager "platforms;android-37.0" "system-images;android-37.0;google_apis_ps16k;arm64-v8a" "platform-tools" "build-tools;37.0.0" "ndk;29.0.14206865"
 
 cd "$HOME"/android/
 
@@ -29,7 +29,7 @@ cd "$HOME"/android/cmdline-tools/latest/bin
 
 # `emupixel9a` is the name I gave to the emulator.
 # `50` is the ID of the device definition corresponding to "Pixel 9a" (see all definitions with `./avdmanager list`).
-./avdmanager create avd -n emupixel9a -k "system-images;android-34;google_apis;arm64-v8a" -d 50
+./avdmanager create avd -n emupixel9a -k "system-images;android-37.0;google_apis_ps16k;arm64-v8a" -d 50
 
 # Verify it got created by running `./avdmanager list avd`.
 

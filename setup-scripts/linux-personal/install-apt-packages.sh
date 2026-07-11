@@ -15,6 +15,7 @@ sudo apt install \
   libxinerama-dev \
   libxt-dev \
   nginx \
+  openjdk-25-jdk \
   pipewire \
   pipewire-audio \
   scrot \
