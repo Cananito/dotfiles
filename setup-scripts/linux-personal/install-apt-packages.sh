@@ -1,5 +1,6 @@
 # TODO: Install ALSA without PipeWire (def need alsa-utils).
 sudo apt install \
+  bc \
   brightnessctl \
   curl \
   evince \
@@ -7,7 +8,6 @@ sudo apt install \
   fonts-noto-color-emoji \
   gcc \
   gimp \
-  gnome-calculator \
   htop \
   libncurses-dev \
   libx11-dev \
