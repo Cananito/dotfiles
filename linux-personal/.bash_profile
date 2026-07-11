@@ -5,6 +5,7 @@ export PS1=" \[\e[1m\]\W\[\e[0m\]\[\e[31m\]\$(__git_ps1)\[\e[0m\] 🔴 "
 # Android dev set up.
 export ANDROID_HOME=""$HOME"/android"
 export KEYSTORE_PASSWORD="123123"
+export JAVA_HOME="/usr/lib/jvm/java-25-openjdk-amd64" # `readlink -f `which javac``, trim `/bin/javac`
 
 # Expands $PATH to find the Android dev binaries.
 PATH=""$ANDROID_HOME"/tools":""$ANDROID_HOME"/tools/bin":""$ANDROID_HOME"/platform-tools":"$PATH"
