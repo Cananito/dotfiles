@@ -1,4 +1,3 @@
-# TODO: Install ALSA without PipeWire (def need alsa-utils).
 sudo apt install \
   bc \
   brightnessctl \
