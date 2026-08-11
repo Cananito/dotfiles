@@ -1,0 +1,9 @@
+* wifi management
+* dmenu emoji picker (xdo?)
+* dmenu manual list of GUI programs
+* fix fastfetch background colors or uninstall
+* global screen zoom functionality
+* migrate from slstatus to my own for on-demand updates
+* upgrade sxiv to nsxiv?
+* replace VLC with mpv?
+
