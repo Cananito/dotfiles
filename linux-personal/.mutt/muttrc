@@ -1,0 +1,35 @@
+set editor="vim"
+set copy=no
+set move=no
+set edit_headers=yes
+color normal black default
+color index black default ~A
+
+set folder="imaps://imap.gmail.com/"
+set spoolfile="+INBOX"
+set postponed="+[Gmail]/Drafts"
+set trash="+[Gmail]/Trash"
+unset record
+# mailboxes =INBOX =Trash =Drafts
+
+set header_cache="$HOME/mutt_cache/headers"
+set message_cachedir="$HOME/mutt_cache/bodies"
+set certificate_file="$HOME/mutt_cache/certificates"
+
+unset imap_passive
+set imap_check_subscribed
+set imap_user="rogeliogudino@google.com"
+set from="rogeliogudino@google.com"
+set realname="Rogelio Gudino"
+
+# README: https://gitlab.com/muttmua/mutt/-/blob/master/contrib/mutt_oauth2.py.README
+# curl https://gitlab.com/muttmua/mutt/-/raw/master/contrib/mutt_oauth2.py -OL
+# cd ~/mutt_cache/
+# python3 mutt_oauth2.py cananito@gmail.com.tokens --verbose --authorize
+# google
+# localhostauthcode
+set imap_authenticators="oauthbearer"
+set imap_oauth_refresh_command="python3 $HOME/.mutt/mutt_oauth2.py $HOME/mutt_cache/cananito@gmail.com.tokens"
+set smtp_url="smtps://cananito@google.com@smtp.gmail.com:465"
+set smtp_authenticators="oauthbearer"
+set smtp_oauth_refresh_command="python3 $HOME/.mutt/mutt_oauth2.py $HOME/mutt_cache/cananito@gmail.com.tokens"
