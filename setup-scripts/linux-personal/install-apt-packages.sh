@@ -13,6 +13,7 @@ sudo apt install \
   libxft-dev \
   libxinerama-dev \
   libxt-dev \
+  mutt \
   nginx \
   openjdk-25-jdk \
   pipewire \
