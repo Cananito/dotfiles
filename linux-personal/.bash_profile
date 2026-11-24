@@ -8,7 +8,7 @@ export KEYSTORE_PASSWORD="123123"
 export JAVA_HOME="/usr/lib/jvm/java-25-openjdk-amd64" # `readlink -f `which javac``, trim `/bin/javac`
 
 # Expands $PATH to find the Android dev binaries.
-PATH=""$ANDROID_HOME"/tools":""$ANDROID_HOME"/tools/bin":""$ANDROID_HOME"/platform-tools":"$PATH"
+PATH=""$ANDROID_HOME"/tools:"$ANDROID_HOME"/tools/bin:"$ANDROID_HOME"/platform-tools:/usr/sbin:"$PATH""
 
 # Start Xorg.
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
