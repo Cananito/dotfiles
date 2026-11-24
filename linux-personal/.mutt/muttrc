@@ -18,8 +18,8 @@ set certificate_file="$HOME/mutt_cache/certificates"
 
 unset imap_passive
 set imap_check_subscribed
-set imap_user="rogeliogudino@google.com"
-set from="rogeliogudino@google.com"
+set imap_user="cananito@gmail.com"
+set from="cananito@gmail.com"
 set realname="Rogelio Gudino"
 
 # README: https://gitlab.com/muttmua/mutt/-/blob/master/contrib/mutt_oauth2.py.README
