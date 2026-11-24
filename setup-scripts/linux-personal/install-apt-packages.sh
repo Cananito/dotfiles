@@ -1,9 +1,11 @@
 sudo apt install \
+  abcde \
   bc \
   brightnessctl \
   curl \
   evince \
   fastfetch \
+  ffmpeg \
   fonts-noto-color-emoji \
   gcc \
   gimp \
