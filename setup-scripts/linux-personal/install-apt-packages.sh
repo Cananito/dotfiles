@@ -16,6 +16,7 @@ sudo apt install \
   libxinerama-dev \
   libxt-dev \
   mutt \
+  network-manager \
   nginx \
   openjdk-25-jdk \
   pipewire \
